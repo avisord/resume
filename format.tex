@@ -61,7 +61,7 @@
     \fontsize{10}{12}{\selectfont
     \href{tel:+91-9811525897}{\underline{+91-9811525897}} \hspace{0.5em}$|$\hspace{0.5em}
     \href{mailto:avinash2002a@gmail.com}{\underline{avinash2002a@gmail.com}} \hspace{0.5em}$|$\hspace{0.5em} 
-    \href{https://avinashjha.space}{\underline{avinashjha.space}} \hspace{0.5em}$|$\hspace{0.5em}
+    \href{https://www.avinashjha.space}{\underline{avinashjha.space}} \hspace{0.5em}$|$\hspace{0.5em}
     \href{https://www.linkedin.com/in/avikrjha}{\underline{linkedin.com/in/avikrjha}}
     }
 \end{center}
@@ -71,28 +71,29 @@
 
 \resumeSubheading{Full Stack Engineer}{Mar 2025 -- Present}{thinkinteraction.in}{Remote}
 \resumeItemListStart
-\resumeItem{Designed and implemented a microfrontend architecture using RequireJS, React, and Vite, enabling modular applications with cross-widget drag-and-drop, notifications, and inter-widget communication.}
+\resumeItem{Architected a React microfrontend on a PLM (ENOVIA) dashboard with drag-and-drop, notifications, and search across iframe-isolated widgets.}
+\resumeItem{Reverse-engineered ENOVIA's undocumented internal APIs via browser DevTools to power custom widget integrations.}
 \resumeItem{Built scalable APIs with NestJS + TypeScript, integrating automated tests to prevent regressions and improve production reliability.}
-\resumeItem{Delivered a high-performance Remix frontend (SSR + CSR), improving TTFB, SEO, and reducing redundant re-renders via optimized caching and state management.}
+\resumeItem{Delivered a high-performance Remix frontend (SSR + CSR), improving TTFB and SEO via optimized caching and state management.}
 \resumeItem{Introduced a monorepo with shared logic packages, streamlining development and accelerating feature rollout.}
-\resumeItem{Automated GCP VM deployments using Bash, Docker, and SSH, cutting manual deployment time by 60\% and reducing costs by 20\%.}
-\resumeItem{Designed and implemented CI/CD pipelines using GitHub Actions, enabling automated build, test, and deployment workflows across services.}
-\resumeItem{Developed a natural language search system, enabling users to query data using free-form text and improving search relevance and usability.}
+\resumeItem{Built CI/CD pipelines with GitHub Actions and automated GCP VM deployments via Bash, Docker, and SSH, replacing slow manual releases.}
 \resumeItemListEnd
 
 \resumeSubheading{Full Stack Engineer}{Jan 2024 -- Mar 2025}{Stackkaroo}{Remote}
 \resumeItemListStart
 \resumeItem{Developed full-stack projects across diverse tech stacks (Next.js, MERN, Django-React, Flask-Jinja, PHP) adapting quickly to client requirements.}
-\resumeItem{Built a WebGI-based 3D jewelry configurator boosting engagement and conversions.}
-\resumeItem{Created a JS-based Fixed Deposit calculator to compare RBI rates, improving user decision-making.}
-\resumeItem{Reviewed code, coordinated with other developers, and enforced code quality standards.}
-\resumeItem{Built interactive 3D room tours using React Three Fiber, Drei, and Three.js for real estate and interior design clients.}
+\resumeItem{Built a WebGI-based 3D jewelry configurator with real-time material, gemstone, and finish customization, boosting engagement and conversions.}
+\resumeItem{Created a JS-based \href{https://www.icici.bank.in/personal-banking/deposits/fixed-deposit/fd-calculator}{\underline{Fixed Deposit calculator}} to compare RBI rates and project returns, helping users make better-informed investment decisions.}
+\resumeItem{Reviewed code, coordinated with developers across projects, and enforced code quality standards to keep delivery consistent and maintainable.}
+\resumeItem{Built interactive 3D room tours using React Three Fiber, Drei, and Three.js for real estate and interior design clients. \href{https://www.3ddemo.online/}{\underline{Live}}}
 \resumeItemListEnd
 
 \resumeSubheading{Frontend Developer (Intern)}{Aug 2023 -- Jan 2024}{Stackkaroo}{Remote}
 \resumeItemListStart
-\resumeItem{Built a custom static website for a bank foundation with GSAP animations.}
-\resumeItem{Integrated Strapi and Concrete CMS to streamline content workflows.}
+\resumeItem{Built a custom static website for the \href{https://www.icicifoundation.org/}{\underline{ICICI Foundation}} with rich GSAP motion animations.}
+\resumeItem{Built a multilingual, location-based tourist-information viewer powered by Strapi and Concrete CMS for streamlined content publishing.}
+\resumeItem{Collaborated within a cross-functional team, learning agile workflows and shipping features through iterative feedback and code reviews.}
+\resumeItem{Worked directly with clients to gather requirements and translate them into clear, deliverable product features.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -104,31 +105,36 @@
 
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-\item{\textbf{Programming:} JavaScript, TypeScript, Python, Bash, C, C++, GLSL \\
+\item{\fontsize{8.8}{10.5}\selectfont
+\textbf{Programming:} TypeScript, Python, C, Bash \\
 \textbf{Frameworks:} Next.js, NestJS, Remix.js, Redux.js, Three.js, TypeORM, Mongoose, Prisma, Vite, FastAPI, Flask, Django \\
-\textbf{Tools:} Git, Docker, Linux, GCP, AWS, GitHub Actions, MySQL, MongoDB, PostgreSQL \\
-\textbf{AI:} Claude code, MCP, Acli}
+\textbf{Tools:} Git, Docker, Linux, GCP, AWS, GitHub Actions, MySQL, MongoDB, PostgreSQL \\[-2pt]
+\textbf{AI:} Claude code, Model Context Protocol, Acli rovodev
+}
 \end{itemize}
 
 \section{Projects}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
+{\textbf{ENOVIA Dashboard Widgets} | PLM Microfrontend Integration}
+{}
+\resumeItemListStart
+\resumeItem{Integrated React apps as independent widgets into ENOVIA's PLM dashboard, enabling them to connect and share functionality.}
+\resumeItem{Developed cross-widget drag-and-drop using postMessage to communicate across iframe-isolated widget boundaries.}
+\resumeItem{Built and integrated a unified advanced search widget that queries and surfaces results across multiple widgets.}
+\resumeItem{Reverse-engineered ENOVIA's undocumented APIs via browser DevTools to map the platform APIs exposed to widgets.}
+\resumeItemListEnd
+
+\resumeProjectHeading
 {\textbf{NAS System in C} | Network Storage Server}
-{\href{https://github.com/avisord/chttp2}{\underline{GitHub}}}
+{\href{https://github.com/imaginary-storage/NAS}{\underline{GitHub}}}
 \resumeItemListStart
 \resumeItem{A lightweight Network Attached Storage (NAS) system in C for managing and accessing files over a web interface.}
 \resumeItem{Developed a custom backend server to handle file uploads, downloads, and real-time content preview in the browser.}
 \resumeItem{Designed the system to support multiple users with secure access and isolated file handling.}
 \resumeItem{Structured the application with a modular design, allowing easy extension with new features and integrations.}
 \resumeItem{Optimized performance for efficient file handling and smooth user experience during large file transfers.}
-\resumeItemListEnd
-
-\resumeProjectHeading{\textbf{Imaginary Storage} | Cloud Storage Platform}{\href{https://github.com/Jhaempyre/imaginestorage}{\underline{GitHub}}}
-\resumeItemListStart
-\resumeItem{Designed and built a provider-agnostic cloud storage platform where users have full control over file upload, preview, sharing, and deletion.}
-\resumeItem{Integrated AWS and GCP options for storage backends, giving users flexibility and cost efficiency.}
-\resumeItem{Developed a highly interactive and responsive web UI to deliver a smooth user experience.}
 \resumeItemListEnd
 
 \resumeProjectHeading{\textbf{MeloSynthiaAI} | AI-powered Music Composition (Hackathon Award Winner)}{\href{https://github.com/AYUSHMAN0503/MeloSynthiaAI}{\underline{GitHub}}}
